@@ -1,9 +1,20 @@
-function fetchData() {
+function fetchData(id) {
     //alert("about to request page");
-    word = document.getElementById("word");
-    first = document.getElementById("first");
-    last = document.getElementById("last");
-    httpGetAsync("http://localhost/full-stack/submitnewpair.php?word="+word+"&"+first+"&"+last, processPage);
+    if (id == "new") {
+        word = document.getElementById("word");
+        first = document.getElementById("first");
+        last = document.getElementById("last");
+        httpGetAsync("http://localhost/full-stack/submitnewpair.php?word=" + word + "&first=" + first + "&last=" + last, processPage);
+    }
+    if (id == "word") {
+        word = document.getElementById("word-lookup");
+        httpGetAsync("http://localhost/full-stack/submitnewpair.php?word=" + word, processPage);
+    }
+    if (id == "teacher") {
+        first = document.getElementById("first-lookup");
+        last = document.getElementById("last-lookup");
+        httpGetAsync("http://localhost/full-stack/submitnewpair.php?word=" + first + "&last=" + last, processPage);
+    }
 
 }
 

@@ -9,13 +9,29 @@
 </head>
 
 <body>
-    Teacher First: <input type="text" id="first">
+    New Teacher-Word Pair:
+    <br> Teacher First: <input type="text" id="first">
     </br>
     Teacher Last: <input type="text" id="last">
     </br>
     Word: <input type="text" id="word">
     </br>
-    <button onclick="fetchData()"> Submit </button>
+    <button onclick="fetchData(new)"> Submit </button>
+    <hr>
+    <h3> LOOKUP </h3>
+    <br> Word:
+    <input type="text" id="word-lookup">
+    <button onclick="fetchData(word)"> Submit </button>
+    <hr>
+     Teacher First:
+    <input type="text" id="first-lookup">
+     Teacher Last:
+    <input type="text" id="last-lookup">
+    <button onclick="fetchData(teacher)"> Submit </button>
+
+
+
+
 
     <p id="reportArea"> </p>
 
