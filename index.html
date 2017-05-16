@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="requests.js"></script>
+</head>
+
+<body>
+    <h1>
+        <marquee behavior="" direction="up" height="500" scrollamount="10" bgcolor="FF06A2">
+        <marquee behavior ="alternate" scrollamount="10">
+        <marquee behavior="alternate" direction ="up" bgcolor="#23BCFF" height = "150" width="500">
+        <marquee scrollamount="10">
+        <marquee scrollamount="25" bgcolor="#000000" width="250">
+    
+                <span style="color:#ff5f00;">X</span><span style="color:#ff7f00;"> </span><span style="color:#ff9f00;">T</span>
+                <span style="color:#ffbf00;">e</span>
+                <span style="color:#ffdf00;">a</span><span style="color:#ffff00;">c</span><span style="color:#ccff00;">h</span>
+                <span style="color:#99ff00;">e</span>
+                <span style="color:#66ff00;">r</span><span style="color:#33ff00;"> </span><span style="color:#00ff00;">W</span>
+                <span style="color:#00ff40;">o</span>
+                <span style="color:#00ff80;">r</span><span style="color:#00ffbf;">d</span><span style="color:#00ffff;"> </span>
+                <span style="color:#00bfff;">P</span>
+                <span style="color:#0080ff;">a</span><span style="color:#0040ff;">i</span><span style="color:#0000ff;">r</span></div>
+        </marquee>
+        </marquee>
+        </marquee>
+        </marquee>
+        </marquee>
+    </h1>
+    <hr>
+    <h2>
+        <marquee scrollamount="40" bgcolor="#000000">
+            <div><span style="color:#ff0000;">G</span><span style="color:#ff1900;">E</span><span style="color:#ff3300;">N</span>
+                <span style="color:#ff4c00;">E</span><span style="color:#ff6600;">R</span><span style="color:#ff7f00;">A</span>
+                <span
+                    style="color:#ff9900;">T</span>
+                    <span style="color:#ffb200;">E</span><span style="color:#ffcc00;"> </span><span style="color:#ffe500;">T</span>
+                    <span
+                        style="color:#ffff00;">E</span>
+                        <span style="color:#ccff00;">A</span><span style="color:#99ff00;">C</span><span style="color:#66ff00;">H</span>
+                        <span
+                            style="color:#33ff00;">E</span>
+                            <span style="color:#00ff00;">R</span><span style="color:#00ff33;"> </span><span style="color:#00ff66;">W</span>
+                            <span
+                                style="color:#00ff99;">O</span>
+                                <span style="color:#00ffcc;">R</span><span style="color:#00ffff;">D</span><span style="color:#00ccff;"> </span>
+                                <span
+                                    style="color:#0099ff;">P</span>
+                                    <span style="color:#0066ff;">A</span><span style="color:#0033ff;">I</span><span style="color:#0000ff;">R</span></div>
+        </marquee>
+    </h2>
+    <hr> New Teacher-Word Pair:
+    <br> Teacher First: <input type="text" id="first">
+    </br>
+    Teacher Last: <input type="text" id="last">
+    </br>
+    Word: <input type="text" id="word">
+    </br>
+    <button onclick="fetchData(new)"> Submit </button>
+    <hr>
+    <h3>
+        <marquee bgcolor="#000000" scrollamount="25">
+            <div><span style="color:#ff0000;">L</span><span style="color:#ff1500;">O</span><span style="color:#ff2a00;">O</span>
+                <span
+                    style="color:#ff4000;">K</span><span style="color:#ff5500;">U</span><span style="color:#ff6a00;">P</span><span style="color:#ff7f00;"> </span>
+                    <span
+                        style="color:#ff9900;">T</span><span style="color:#ffb200;">E</span><span style="color:#ffcc00;">A</span><span style="color:#ffe500;">C</span>
+                        <span
+                            style="color:#ffff00;">H</span><span style="color:#d5ff00;">E</span><span style="color:#aaff00;">R</span><span style="color:#80ff00;"> </span>
+                            <span
+                                style="color:#55ff00;">O</span><span style="color:#2bff00;">R</span><span style="color:#00ff00;"> </span><span style="color:#00ff33;">W</span>
+                                <span
+                                    style="color:#00ff66;">O</span><span style="color:#00ff99;">R</span><span style="color:#00ffcc;">D</span><span style="color:#00ffff;"> </span>
+                                    <span
+                                        style="color:#00d5ff;">P</span><span style="color:#00aaff;">A</span><span style="color:#0080ff;">I</span>
+                                        <span
+                                            style="color:#0055ff;">R</span><span style="color:#002bff;">!</span><span style="color:#0000ff;">!</span></div>
+        </marquee>
+    </h3>
+    <hr> Word:
+    <input type="text" id="word-lookup">
+    <br>
+    <button onclick="fetchData(word)"> Submit </button>
+    <hr> Teacher First:
+    <input type="text" id="first-lookup">
+    <br> Teacher Last:
+    <input type="text" id="last-lookup">
+    <br>
+    <button onclick="fetchData(teacher)">Submit </button>
+
+
+
+
+
+
+
+    <p id="reportArea"> </p>
+
+</body>
+
+</html>
