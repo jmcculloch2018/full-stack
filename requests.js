@@ -1,5 +1,5 @@
 function fetchData(id) {
-    alert("about to request page");
+    // alert("about to request page");
 
     if (id == 1) {
         console.log("new word pair");
