@@ -44,5 +44,5 @@ function httpGetAsync(theUrl, callbackWhenPageLoaded) {
 //This callback method is a bit boring as it just prints to the console.
 //Add more fun or call another method from inside to do something interesting.
 function processPage(responseText) {
-    document.getElementById("reportArea").innerHTML = responseText;
+    document.getElementById("s").innerHTML = responseText;
 }
