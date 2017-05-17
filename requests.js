@@ -1,19 +1,25 @@
 function fetchData(id) {
-    //alert("about to request page");
+    alert("about to request page");
+
     if (id == 1) {
+        console.log("new word pair");
         word = document.getElementById("word");
         first = document.getElementById("first");
         last = document.getElementById("last");
-        httpGetAsync("http://localhost/full-stack/submitnewpair.php?word=" + word + "&first=" + first + "&last=" + last, processPage);
+        httpGetAsync("http://localhost/full-stack/submitNewPair.php?word=" + word + "&first=" + first + "&last=" + last, processPage);
     }
     if (id == 2) {
         word = document.getElementById("word-lookup");
-        httpGetAsync("http://localhost/full-stack/submitnewpair.php?word=" + word, processPage);
+        httpGetAsync("http://localhost/full-stack/getWord.php?word=" + word, processPage);
+        console.log("wordlookup");
+
     }
     if (id == 3) {
         first = document.getElementById("first-lookup");
         last = document.getElementById("last-lookup");
-        httpGetAsync("http://localhost/full-stack/submitnewpair.php?word=" + first + "&last=" + last, processPage);
+        httpGetAsync("http://localhost/full-stack/getTeacher.php?first=" + first + "&last=" + last, processPage);
+        console.log("teacherlookup");
+
     }
 
 }
