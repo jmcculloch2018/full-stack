@@ -3,20 +3,20 @@ function fetchData(id) {
 
     if (id == 1) {
         console.log("new word pair");
-        word = document.getElementById("word");
-        first = document.getElementById("first");
-        last = document.getElementById("last");
+        word = document.getElementById("word").value;
+        first = document.getElementById("first").value;
+        last = document.getElementById("last").value;
         httpGetAsync("http://localhost/full-stack/submitNewPair.php?word=" + word + "&first=" + first + "&last=" + last, processPage);
     }
     if (id == 2) {
-        word = document.getElementById("word-lookup");
+        word = document.getElementById("word-lookup").value;
         httpGetAsync("http://localhost/full-stack/getWord.php?word=" + word, processPage);
         console.log("wordlookup");
 
     }
     if (id == 3) {
-        first = document.getElementById("first-lookup");
-        last = document.getElementById("last-lookup");
+        first = document.getElementById("first-lookup").value;
+        last = document.getElementById("last-lookup").value;
         httpGetAsync("http://localhost/full-stack/getTeacher.php?first=" + first + "&last=" + last, processPage);
         console.log("teacherlookup");
 
