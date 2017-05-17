@@ -1,16 +1,16 @@
 function fetchData(id) {
     //alert("about to request page");
-    if (id == "new") {
+    if (id == 1) {
         word = document.getElementById("word");
         first = document.getElementById("first");
         last = document.getElementById("last");
         httpGetAsync("http://localhost/full-stack/submitnewpair.php?word=" + word + "&first=" + first + "&last=" + last, processPage);
     }
-    if (id == "word") {
+    if (id == 2) {
         word = document.getElementById("word-lookup");
         httpGetAsync("http://localhost/full-stack/submitnewpair.php?word=" + word, processPage);
     }
-    if (id == "teacher") {
+    if (id == 3) {
         first = document.getElementById("first-lookup");
         last = document.getElementById("last-lookup");
         httpGetAsync("http://localhost/full-stack/submitnewpair.php?word=" + first + "&last=" + last, processPage);
